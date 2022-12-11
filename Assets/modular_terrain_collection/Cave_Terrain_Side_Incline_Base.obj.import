@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Cave_Terrain_Side_Incline_Base.obj-498ba05d9cbf54d60b7bae3fe1186465.mesh"
+
+[deps]
+
+files=[ "res://.import/Cave_Terrain_Side_Incline_Base.obj-498ba05d9cbf54d60b7bae3fe1186465.mesh" ]
+
+source_file="res://Assets/modular_terrain_collection/Cave_Terrain_Side_Incline_Base.obj"
+dest_files=[ "res://.import/Cave_Terrain_Side_Incline_Base.obj-498ba05d9cbf54d60b7bae3fe1186465.mesh", "res://.import/Cave_Terrain_Side_Incline_Base.obj-498ba05d9cbf54d60b7bae3fe1186465.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

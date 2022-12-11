@@ -1,0 +1,8 @@
+[gd_scene format=2]
+
+[node name="UI" type="CanvasLayer"]
+pause_mode = 1
+physics_interpolation_mode = 1
+process_priority = -2
+layer = -5
+follow_viewport_enable = true
