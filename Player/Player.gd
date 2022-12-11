@@ -10,7 +10,7 @@ var max_speed =8
 var mouse_sensitivity = 0.002
 var jump = 2
 var jumping = false
-var target = null
+var target = 1
 
 
 func _ready():
@@ -26,6 +26,8 @@ func _physics_process(delta):
 	if Input.is_action_just_pressed("shoot"):
 		$AnimationTree.active = false
 		$AnimationPlayer.play("Shoot")
+		if target != null and target.is_in_group("target"):
+			target.die()
 	
 	velocity.x += desired_velocity.x
 	velocity.z += desired_velocity.z
@@ -34,8 +36,7 @@ func _physics_process(delta):
 	$AnimationTree.set("parameters/Idle_Run/blend_amount", current_speed/max_speed) 
 	velocity = move_and_slide(velocity, Vector3.UP, true)
 	
-	if Input.is_action_just_pressed("shoot") and target != null and target.is_in_group("target"):
-		target.die()
+	
 
 
 
@@ -59,3 +60,6 @@ func get_input():
 		jumping = true
 	input_dir = input_dir.normalized()
 	return input_dir
+
+
+
